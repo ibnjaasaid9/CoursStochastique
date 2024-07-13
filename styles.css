@@ -18,11 +18,7 @@ header {
     justify-content: space-between;
 }
 
-header .logo {
-    width: 100px;
-}
-
-header .chapter1-image {
+header .university-logo {
     width: 100px;
 }
 

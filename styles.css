@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    background-color: #f4f4f4;
 }
 
 header {
@@ -43,4 +44,13 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }

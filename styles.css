@@ -11,30 +11,47 @@ header {
     background: #333;
     color: #fff;
     padding: 1rem;
-    text-align: center;
-    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
+header .header-left {
+    flex-grow: 1;
+}
+
 header .university-logo {
     width: 100px;
+    height: auto;
 }
 
-nav ul {
+nav.navigation {
+    background: #007bff;
+    padding: 0.5rem 0;
+}
+
+nav.navigation ul {
     list-style: none;
+    display: flex;
+    justify-content: center;
     padding: 0;
+    margin: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 1rem;
+nav.navigation ul li {
+    margin: 0 1rem;
 }
 
-nav ul li a {
+nav.navigation ul li a {
     color: #fff;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+
+nav.navigation ul li a:hover {
+    background: #0056b3;
 }
 
 main {

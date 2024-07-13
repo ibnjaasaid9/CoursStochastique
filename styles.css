@@ -4,13 +4,22 @@ body {
     padding: 0;
     line-height: 1.6;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background: #333;
     color: #fff;
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
 }
 
 nav ul {
@@ -32,8 +41,42 @@ main {
     padding: 1rem;
 }
 
-section {
-    margin-bottom: 2rem;
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column, .right-column {
+    width: 48%;
+}
+
+.right-column {
+    background: #e9ecef;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.chapter {
+    background: #fff;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.chapter img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.chapter h3 {
+    margin-top: 0.5rem;
+    color: #007bff;
+}
+
+.chapter p {
+    margin: 0.5rem 0 0;
 }
 
 footer {
@@ -47,7 +90,7 @@ footer {
 }
 
 a {
-    color: #333;
+    color: #007bff;
     text-decoration: none;
 }
 

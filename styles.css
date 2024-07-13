@@ -39,7 +39,7 @@ header .university-logo {
 }
 
 nav.navigation {
-    background: #007bff;
+    background: #5a5a5a; /* Changed to a different color than blue */
     padding: 0.5rem 0;
     margin-top: -20px; /* Adjust to overlap with header */
     text-align: center;
@@ -63,11 +63,11 @@ nav.navigation ul li a {
     padding: 0.5rem 1rem;
     border: 1px solid #fff;
     border-radius: 5px;
-    background: #0056b3;
+    background: #444; /* Changed to a different color than blue */
 }
 
 nav.navigation ul li a:hover {
-    background: #003f7f;
+    background: #222; /* Changed to a different color than blue */
 }
 
 main {
@@ -81,6 +81,14 @@ main {
 
 .left-column, .right-column {
     width: 48%;
+}
+
+.left-column .documents-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .right-column {
@@ -102,8 +110,8 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    bottom: 0;
+    margin-top: 2rem; /* Added space above footer */
+    position: relative;
     width: 100%;
 }
 

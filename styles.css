@@ -19,9 +19,7 @@ header {
 }
 
 header .university-logo {
-    width: 100px; /* Vous pouvez ajuster la largeur selon vos besoins */
-    height: auto; /* Maintient le ratio de l'image */
-}
+    width: 100px;
 }
 
 nav ul {

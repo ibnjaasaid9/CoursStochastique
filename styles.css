@@ -91,6 +91,34 @@ main {
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
+.left-column {
+    margin-bottom: 2rem; /* Add some space between sections */
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 0.5rem;
+}
+
+.left-column table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.left-column table, .left-column th, .left-column td {
+    border: 1px solid #ccc;
+}
+
+.left-column th, .left-column td {
+    padding: 0.5rem;
+    text-align: left;
+}
+
 .left-column .documents-container {
     border: 1px solid #ccc;
     padding: 1rem;

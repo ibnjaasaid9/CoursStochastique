@@ -38,11 +38,17 @@ header .university-logo {
     height: auto;
 }
 
+.header-separator {
+    margin: 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
 nav.navigation {
     background: #5a5a5a; /* Changed to a different color than blue */
-    padding: 0.5rem 0;
-    margin-top: -20px; /* Adjust to overlap with header */
+    padding: 1rem 0;
     text-align: center;
+    margin-top: 1rem;
 }
 
 nav.navigation ul {

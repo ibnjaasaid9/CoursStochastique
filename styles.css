@@ -127,6 +127,22 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.left-column .book-references {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.left-column .book-references .book {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.left-column .book-references .book img {
+    width: 100px;
+    height: auto;
+}
+
 .right-column {
     background: #e9ecef;
     padding: 1rem;

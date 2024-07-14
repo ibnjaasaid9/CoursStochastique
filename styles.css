@@ -34,8 +34,12 @@ header {
     flex-grow: 1;
 }
 
+.header-left h1 {
+    color: #007bff; /* Set the color of the title to blue */
+}
+
 header .university-logo {
-    width: 100px;
+    width: 150px; /* Increase the width of the logo */
     height: auto;
 }
 

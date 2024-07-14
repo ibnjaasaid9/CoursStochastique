@@ -8,15 +8,16 @@ body {
 }
 
 header {
-    background: url('images/chapter6.jpg') no-repeat center center;
+    background: url('images/chapter7.jpg') no-repeat center center;
     background-size: cover;
-    color: #fff;
+    color: #fff; /* Change the text color to white for better contrast */
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 250px;
     position: relative;
+    background-color: #007bff; /* Set the background color to blue */
 }
 
 .header-content {

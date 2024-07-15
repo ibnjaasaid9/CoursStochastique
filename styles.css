@@ -434,10 +434,10 @@ a:hover {
 }
 
 .chapter-button {
-    background-color: #008000; /* Green color for chapter buttons */
+    background-color: #008000; /* Green for chapter buttons */
     color: white;
-    width: 100%; /* Makes all buttons fill their cell */
-    padding: 10px 20px; /* Adds padding for better visibility */
+    width: 100%;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -445,14 +445,14 @@ a:hover {
 }
 
 .chapter-button:hover {
-    opacity: 0.8; /* Slight transparency on hover */
+    opacity: 0.8;
 }
 
 .quiz-button {
-    background-color: #ff0000; /* Red color for quiz buttons */
+    background-color: #ff0000; /* Red for quiz buttons */
     color: white;
-    width: 100%; /* Makes all buttons fill their cell */
-    padding: 10px 20px; /* Adds padding for better visibility */
+    width: 100%;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
     border: none;
@@ -460,5 +460,5 @@ a:hover {
 }
 
 .quiz-button:hover {
-    opacity: 0.8; /* Slight transparency on hover */
+    opacity: 0.8;
 }

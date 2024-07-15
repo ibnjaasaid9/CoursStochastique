@@ -425,7 +425,7 @@ a:hover {
 .chapters-table {
     width: 100%;
     border-collapse: collapse;
-    background-color: #f0f8ff; /* Light blue background for the table */
+    margin-top: 20px;
 }
 
 .chapters-table th, .chapters-table td {
@@ -435,16 +435,24 @@ a:hover {
 }
 
 .chapter-button, .quiz-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
+    width: 100%; /* Makes all buttons fill their cell */
+    padding: 10px 20px; /* Adds padding for better visibility */
     border-radius: 5px;
     cursor: pointer;
+    border: none;
     transition: background-color 0.3s ease;
 }
 
-.chapter-button:hover, .quiz-button:hover {
-    background-color: #0056b3;
+.chapter-button {
+    background-color: #007bff;
+    color: white;
 }
 
+.quiz-button {
+    background-color: #ff0000; /* Red color for quiz buttons */
+    color: white;
+}
+
+.chapter-button:hover, .quiz-button:hover {
+    opacity: 0.8; /* Slight transparency on hover */
+}

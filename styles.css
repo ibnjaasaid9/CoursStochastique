@@ -422,6 +422,29 @@ a:hover {
     background-color: #0056b3;
 }
 
-/* Remaining CSS from the existing file remains unchanged */
-/* (Include all other existing styles below this comment) */
+.chapters-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f0f8ff; /* Light blue background for the table */
+}
+
+.chapters-table th, .chapters-table td {
+    border: 1px solid #d3d3d3;
+    padding: 8px;
+    text-align: left;
+}
+
+.chapter-button, .quiz-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chapter-button:hover, .quiz-button:hover {
+    background-color: #0056b3;
+}
 

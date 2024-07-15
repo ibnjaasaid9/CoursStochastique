@@ -35,7 +35,7 @@ header {
 }
 
 .header-left h1 {
-    color: #007bff; /* Set the color of the title to blue */
+    color: #fff; /* Set the color of the title to white for better contrast */
     animation: slideIn 2s ease-in-out;
 }
 
@@ -189,6 +189,15 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */

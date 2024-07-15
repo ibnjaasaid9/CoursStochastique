@@ -381,3 +381,47 @@ a:hover {
 .book-references .book img:hover {
     transform: scale(1.1);
 }
+
+.forum-table, .consultation-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+}
+
+.forum-table th, .forum-table td, .consultation-table th, .consultation-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.forum-table th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Additional styles for dynamic interaction */
+.discussion .question {
+    background-color: #FFD700; /* Example color for questions */
+}
+
+.discussion .reply {
+    background-color: #ADFF2F; /* Example color for replies */
+}
+
+/* Additional CSS code for new elements */
+.consultation-table button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consultation-table button:hover {
+    background-color: #0056b3;
+}
+
+/* Remaining CSS from the existing file remains unchanged */
+/* (Include all other existing styles below this comment) */
+

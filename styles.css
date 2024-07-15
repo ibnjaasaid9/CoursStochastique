@@ -154,6 +154,7 @@ td[contenteditable="true"]:focus {
 .book-references td {
     text-align: center;
     padding: 1rem;
+    border: none; /* Remove border from table cells */
 }
 
 .book-references .book {
@@ -161,11 +162,13 @@ td[contenteditable="true"]:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 150px; /* Fixed width for each book */
 }
 
 .book-references .book img {
-    width: 150px;
-    height: auto;
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensure images cover the entire area */
     margin-bottom: 0.5rem; /* Add space between the image and the link */
     transition: transform 0.3s ease-in-out;
 }

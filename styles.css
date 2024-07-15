@@ -10,14 +10,14 @@ body {
 header {
     background: url('images/chapter11.jpg') no-repeat center center;
     background-size: cover;
-    color: #fff; /* Change the text color to white for better contrast */
+    color: #fff;
     padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 250px;
     position: relative;
-    background-color: #007bff; /* Set the background color to blue */
+    background-color: #007bff;
 }
 
 .header-content {
@@ -26,7 +26,7 @@ header {
     align-items: center;
     width: 100%;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.6); /* Adding a dark overlay for readability */
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
 }
 
@@ -35,12 +35,12 @@ header {
 }
 
 .header-left h1 {
-    color: #fff; /* Set the color of the title to white for better contrast */
+    color: #fff;
     animation: slideIn 2s ease-in-out;
 }
 
 header .university-logo {
-    width: 150px; /* Increase the width of the logo */
+    width: 150px;
     height: auto;
 }
 
@@ -51,7 +51,7 @@ header .university-logo {
 }
 
 nav.navigation {
-    background: #5a5a5a; /* Changed to a different color than blue */
+    background: #5a5a5a;
     padding: 1rem 0;
     text-align: center;
     margin-top: 1rem;
@@ -75,11 +75,11 @@ nav.navigation ul li a {
     padding: 0.5rem 1rem;
     border: 1px solid #fff;
     border-radius: 5px;
-    background: #444; /* Changed to a different color than blue */
+    background: #444;
 }
 
 nav.navigation ul li a:hover {
-    background: #222; /* Changed to a different color than blue */
+    background: #222;
 }
 
 main {
@@ -94,11 +94,11 @@ main {
 
 .left-column, .right-column {
     width: 48%;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    box-sizing: border-box;
 }
 
 .left-column {
-    margin-bottom: 2rem; /* Add some space between sections */
+    margin-bottom: 2rem;
 }
 
 .left-column ul {
@@ -114,12 +114,12 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 1rem;
-    font-size: 0.8rem; /* Smaller font size for the table */
+    font-size: 0.8rem;
 }
 
 th, td {
     border: 1px solid #ccc;
-    padding: 0.3rem; /* Reduced padding */
+    padding: 0.3rem;
     text-align: left;
 }
 
@@ -154,7 +154,7 @@ td[contenteditable="true"]:focus {
 .book-references td {
     text-align: center;
     padding: 1rem;
-    border: none; /* Remove border from table cells */
+    border: none;
 }
 
 .book-references .book {
@@ -162,14 +162,14 @@ td[contenteditable="true"]:focus {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 150px; /* Fixed width for each book */
+    width: 150px;
 }
 
 .book-references .book img {
     width: 100%;
-    height: 200px; /* Fixed height for images */
-    object-fit: cover; /* Ensure images cover the entire area */
-    margin-bottom: 0.5rem; /* Add space between the image and the link */
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
@@ -201,6 +201,24 @@ td[contenteditable="true"]:focus {
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.quiz-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+    background-color: #0056b3;
 }
 
 footer {
@@ -208,7 +226,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    margin-top: 2rem; /* Added space above footer */
+    margin-top: 2rem;
     position: relative;
     width: 100%;
 }
@@ -262,6 +280,11 @@ a:hover {
 
     .chapter {
         padding: 0.5rem;
+    }
+
+    .quiz-button {
+        position: static;
+        margin-top: 10px;
     }
 }
 

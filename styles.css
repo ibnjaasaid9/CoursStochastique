@@ -421,44 +421,47 @@ a:hover {
 .consultation-table button:hover {
     background-color: #0056b3;
 }
+/* Styles for the chapters table */
 .chapters-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 20px;  /* Space above the table */
 }
 
 .chapters-table th, .chapters-table td {
-    border: 1px solid #d3d3d3;
-    padding: 8px;
-    text-align: left;
+    border: 1px solid #d3d3d3;  /* Light gray border for readability */
+    padding: 8px;  /* Adequate padding for content separation */
+    text-align: left;  /* Aligns text to the left in cells */
 }
 
+/* Styles for chapter buttons */
 .chapter-button {
-    background-color: #008000; /* Green for chapter buttons */
-    color: white;
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
+    background-color: #008000;  /* Green background for visibility */
+    color: white;  /* White text for contrast */
+    width: 100%;  /* Full width to fill the cell */
+    padding: 10px 20px;  /* Vertical and horizontal padding */
+    border-radius: 5px;  /* Rounded corners for a softer look */
+    cursor: pointer;  /* Cursor indicates button */
+    border: none;  /* No border */
+    transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
 }
 
 .chapter-button:hover {
-    opacity: 0.8;
+    opacity: 0.8;  /* Slight transparency on hover for interaction feedback */
 }
 
+/* Styles for quiz buttons */
 .quiz-button {
-    background-color: #ff0000; /* Red for quiz buttons */
-    color: white;
-    width: 100%;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease;
+    background-color: #ff0000;  /* Red background for attention */
+    color: white;  /* White text for contrast */
+    width: 100%;  /* Full width to fill the cell */
+    padding: 10px 20px;  /* Adequate padding for comfort */
+    border-radius: 5px;  /* Rounded corners */
+    cursor: pointer;  /* Indicates the element is clickable */
+    border: none;  /* No border */
+    transition: background-color 0.3s ease;  /* Smooth transition for visual feedback */
 }
 
 .quiz-button:hover {
-    opacity: 0.8;
+    opacity: 0.8;  /* Transparency on hover for user interaction */
 }

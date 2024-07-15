@@ -249,6 +249,53 @@ a:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.reserve-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve-btn:hover {
+    background-color: #218838;
+}
+
+.forum-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.forum-header {
+    background-color: #007bff;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px 5px 0 0;
+}
+
+.forum-content {
+    padding: 1rem;
+}
+
+.question, .response {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+.question {
+    background-color: #e9ecef;
+}
+
+.response {
+    background-color: #d4edda;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .header-content {
@@ -334,5 +381,3 @@ a:hover {
 .book-references .book img:hover {
     transform: scale(1.1);
 }
-
-

@@ -421,7 +421,6 @@ a:hover {
 .consultation-table button:hover {
     background-color: #0056b3;
 }
-
 .chapters-table {
     width: 100%;
     border-collapse: collapse;
@@ -434,7 +433,9 @@ a:hover {
     text-align: left;
 }
 
-.chapter-button, .quiz-button {
+.chapter-button {
+    background-color: #008000; /* Green color for chapter buttons */
+    color: white;
     width: 100%; /* Makes all buttons fill their cell */
     padding: 10px 20px; /* Adds padding for better visibility */
     border-radius: 5px;
@@ -443,16 +444,21 @@ a:hover {
     transition: background-color 0.3s ease;
 }
 
-.chapter-button {
-    background-color: #007bff;
-    color: white;
+.chapter-button:hover {
+    opacity: 0.8; /* Slight transparency on hover */
 }
 
 .quiz-button {
     background-color: #ff0000; /* Red color for quiz buttons */
     color: white;
+    width: 100%; /* Makes all buttons fill their cell */
+    padding: 10px 20px; /* Adds padding for better visibility */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
 }
 
-.chapter-button:hover, .quiz-button:hover {
+.quiz-button:hover {
     opacity: 0.8; /* Slight transparency on hover */
 }

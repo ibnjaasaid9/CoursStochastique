@@ -63,4 +63,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         calendar.render();
     }
+
+    // Réservation des séances de consultation
+    const reserveButtons = document.querySelectorAll('.reserve-btn');
+    reserveButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Vous avez réservé une séance.');
+        });
+    });
 });

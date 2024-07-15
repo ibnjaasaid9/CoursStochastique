@@ -15,4 +15,50 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'scale(1)';
         });
     });
+
+    // Initialisation du calendrier FullCalendar
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'fr',
+        events: [
+            {
+                title: 'Séance 1 : Chapitre 1',
+                start: '2024-09-01'
+            },
+            {
+                title: 'Séance 2 : Chapitre 2',
+                start: '2024-09-08'
+            },
+            {
+                title: 'Séance 3 : Chapitre 3',
+                start: '2024-09-15'
+            },
+            {
+                title: 'Séance 4 : TP1 et TP2',
+                start: '2024-09-22'
+            },
+            {
+                title: 'Séance 5 : Quelques exercices de TD',
+                start: '2024-09-29'
+            },
+            {
+                title: 'Séance 6 : Correction de DL',
+                start: '2024-10-06'
+            },
+            {
+                title: 'Examen mi-parcours',
+                start: '2024-10-20'
+            },
+            {
+                title: 'Remise du projet final',
+                start: '2024-11-10'
+            },
+            {
+                title: 'Examen final',
+                start: '2024-11-25'
+            }
+        ]
+    });
+    calendar.render();
 });

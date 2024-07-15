@@ -9,13 +9,12 @@ document.addEventListener('DOMContentLoaded', function() {
         book.addEventListener('mouseover', function() {
             this.style.transform = 'scale(1.1)';
         });
-
         book.addEventListener('mouseout', function() {
             this.style.transform = 'scale(1)';
         });
     });
 
-    // FullCalendar initialization for the calendar with predefined events
+    // FullCalendar initialization for calendar with predefined events
     if (document.getElementById('calendar')) {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {

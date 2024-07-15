@@ -158,10 +158,11 @@ td[contenteditable="true"]:focus {
     align-items: center;
     text-align: center;
     margin: 0 1rem;
+    width: 150px; /* Set a fixed width for books */
 }
 
 .left-column .book-references .book img {
-    width: 100px;
+    width: 100%;
     height: auto;
     margin-bottom: 0.5rem; /* Add space between the image and the link */
     transition: transform 0.3s ease-in-out;
@@ -169,6 +170,18 @@ td[contenteditable="true"]:focus {
 
 .left-column .book-references .book img:hover {
     transform: scale(1.1);
+}
+
+.left-column .book-references .book a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: #007bff;
+    font-size: 0.9rem;
+}
+
+.left-column .book-references .book a:hover {
+    text-decoration: underline;
 }
 
 .right-column {

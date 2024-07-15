@@ -78,11 +78,36 @@ nav.navigation ul li a {
     background: #444; /* Changed to a different color than blue */
 }
 
-
-
-
 nav.navigation ul li a:hover {
     background: #222; /* Changed to a different color than blue */
+}
+
+main {
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-column, .right-column {
+    width: 48%;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+
+.left-column {
+    margin-bottom: 2rem; /* Add some space between sections */
+}
+
+.left-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-column ul li {
+    margin-bottom: 0.5rem;
 }
 
 table {
@@ -110,51 +135,6 @@ td[contenteditable="true"] {
 td[contenteditable="true"]:focus {
     outline: 2px solid #007bff;
     background-color: #fff;
-}
-
-
-main {
-    padding: 1rem;
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-.left-column, .right-column {
-    width: 48%;
-    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
-}
-
-.left-column {
-    margin-bottom: 2rem; /* Add some space between sections */
-}
-
-.left-column ul {
-    list-style: none;
-    padding: 0;
-}
-
-.left-column ul li {
-    margin-bottom: 0.5rem;
-}
-
-.left-column table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 1rem;
-}
-
-.left-column table, .left-column th, .left-column td {
-    border: 1px solid #ccc;
-}
-
-.left-column th, .left-column td {
-    padding: 0.5rem;
-    text-align: left;
 }
 
 .left-column .documents-container {
@@ -297,7 +277,7 @@ a:hover {
     }
     to {
         transform: translateX(0);
-        opacity: 1;
+        opacity: 1);
     }
 }
 

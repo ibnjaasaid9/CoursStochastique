@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introduction aux Calculs Stochastiques Appliqués à la Finance</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/locales-all.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,9 +19,9 @@
     <hr class="header-separator">
     <nav class="navigation">
         <ul>
-            <li><a href="#resume">Résumé</a></li>
-            <li><a href="#documents">Documents et bases de données</a></li>
-            <li><a href="#chapitres">Chapitres</a></li>
+            <li><a href="index.html">Résumé et Objectifs</a></li>
+            <li><a href="documents.html">Documents et Références</a></li>
+            <li><a href="calendrier.html">Calendrier et Projet</a></li>
             <li><a href="forum.html">Forum de Discussion</a></li>
         </ul>
     </nav>
@@ -32,153 +29,44 @@
         <section id="resume">
             <h2>Résumé</h2>
             <p>Ce cours couvre les fondamentaux des processus stochastiques et leur application en finance. Il se compose de quatre chapitres principaux.</p>
-        </section>
-        <div class="container">
-            <section class="left-column">
-    <h2>Organisation des Séances</h2>
-    <table id="seance-table">
-        <thead>
-            <tr>
-                <th>Séance</th>
-                <th>Date</th>
-                <th>Contenu</th>
-                <th>Volume Horaire</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Séance 1</td>
-                <td contenteditable="true"></td>
-                <td>Chapitre 1</td>
-                <td>3h</td>
-            </tr>
-            <tr>
-                <td>Séance 2</td>
-                <td contenteditable="true"></td>
-                <td>Chapitre 2</td>
-                <td>4h</td>
-            </tr>
-            <tr>
-                <td>Séance 3</td>
-                <td contenteditable="true"></td>
-                <td>Chapitre 3</td>
-                <td>3h</td>
-            </tr>
-            <tr>
-                <td>Séance 4</td>
-                <td contenteditable="true"></td>
-                <td>TD</td>
-                <td>4h</td>
-            </tr>
-            <tr>
-                <td>Séance 5</td>
-                <td contenteditable="true"></td>
-                <td>TP1 et 2</td>
-                <td>4h</td>
-            </tr>
-            <tr>
-                <td>Séance 6</td>
-                <td contenteditable="true"></td>
-                <td>Correction de DL</td>
-                <td>2h</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
-                <h2>Pourcentage des Évaluations</h2>
-                <table>
-                    <tr>
-                        <th>Évaluation</th>
-                        <th>Pourcentage</th>
-                    </tr>
-                    <tr>
-                        <td>Cours</td>
-                        <td>50%</td>
-                    </tr>
-                    <tr>
-                        <td>TP/TD/DL</td>
-                        <td>50%</td>
-                    </tr>
-                </table>
-                <h2 id="documents">Documents et bases de données</h2>
-                <div class="documents-container">
-                    <ul>
-                        <li><a href="supports/Cours_Introduction.pdf" download>Support de cours</a></li>
-                        <li><a href="supports/slides.pdf" download>Slides de présentation</a></li>
-                        <li><a href="supports/Bases_de_donnees.csv" download>Base de données prix action Amazon</a></li>
-                        <li><a href="supports/Bases_de_donnees_taux.csv" download>Base de données des taux</a></li>
-                        <li><a href="supports/Tp1.py" download>TP 1 Simulation des Trajectoires d’un Mouvement Brownien</a></li>
-                        <li><a href="supports/Tp2.py" download>TP 2 Simulation des Prix de l'action Amazon</a></li>
-                        <li><a href="supports/DL1.pdf" download>Devoir Libre : Processus d'Ornstein-Uhlenbeck et Modèle de Vasicek</a></li>
-                        <li><a href="supports/TD.pdf" download>TD</a></li>
-                        <li><a href="rendre_dl.html">Rendre le DL</a></li>
-                    </ul>
-                    <h3>Références Utiles</h3>
-                    <div class="book-references">
-                        <div class="book">
-                            <img src="images/livre1.jpg" alt="Livre 1">
-                            <a href="supports/livre1.pdf" download>Télécharger</a>
-                        </div>
-                        <div class="book">
-                            <img src="images/livre2.jpg" alt="Livre 2">
-                            <a href="supports/livre2.pdf" download>Télécharger</a>
-                        </div>
-                        <div class="book">
-                            <img src="images/livre3.jpg" alt="Livre 3">
-                            <a href="supports/livre3.pdf" download>Télécharger</a>
-                        </div>
-                        <div class="book">
-                            <img src="images/livre4.jpg" alt="Livre 4">
-                            <a href="supports/livre4.pdf" download>Télécharger</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="right-column" id="chapitres">
-                <div class="chapter">
-                    <h3>Chapitre 1 : Fondamentaux et Principes de Base</h3>
-                    <p>Objectif du chapitre :</p>
-                    <ul>
-                        <li>Fournir les bases théoriques nécessaires pour aborder les modèles financiers basés sur des processus stochastiques.</li>
-                        <li>Assurer la compréhension des concepts de tribus, de filtrations, d'espérances conditionnelles et de martingales.</li>
-                    </ul>
-                </div>
-                <div class="chapter">
-                    <h3>Chapitre 2 : Mouvement Brownien et Calcul d’Itô</h3>
-                    <p>Objectif du chapitre :</p>
-                    <ul>
-                        <li>Comprendre les propriétés fondamentales du mouvement brownien et leur impact sur la modélisation stochastique.</li>
-                        <li>Maîtriser les concepts clés de l’intégrale stochastique et du calcul d’Itô.</li>
-                        <li>Appliquer le calcul d’Itô pour résoudre des problèmes pratiques en finance et en théorie des probabilités.</li>
-                    </ul>
-                </div>
-                <div class="chapter">
-                    <h3>Chapitre 3 : Applications en Finance</h3>
-                    <p>Objectif du chapitre :</p>
-                    <ul>
-                        <li>Fournir une compréhension approfondie des modèles stochastiques appliqués en finance.</li>
-                        <li>Mettre en lumière leur utilisation pratique pour l’évaluation des actifs financiers.</li>
-                        <li>Initier au pricing des options.</li>
-                    </ul>
-                </div>
-                <div class="chapter">
-                    <h3>Chapitre 4 : Techniques d’Évaluation</h3>
-                    <p>Objectif du chapitre :</p>
-                    <ul>
-                        <li>Familiariser les étudiants avec l’application pratique des modèles stochastiques en finance quantitative.</li>
-                        <li>Initier à l’utilisation des données réelles et des bases de données en Python.</li>
-                    </ul>
-                </div>
-            </section>
-        </div>
-        <section id="calendrier">
-            <h2>Calendrier des Séances</h2>
-            <div id="calendar"></div>
+            <div class="chapter">
+                <h3>Chapitre 1 : Fondamentaux et Principes de Base</h3>
+                <p>Objectif du chapitre :</p>
+                <ul>
+                    <li>Fournir les bases théoriques nécessaires pour aborder les modèles financiers basés sur des processus stochastiques.</li>
+                    <li>Assurer la compréhension des concepts de tribus, de filtrations, d'espérances conditionnelles et de martingales.</li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <h3>Chapitre 2 : Mouvement Brownien et Calcul d’Itô</h3>
+                <p>Objectif du chapitre :</p>
+                <ul>
+                    <li>Comprendre les propriétés fondamentales du mouvement brownien et leur impact sur la modélisation stochastique.</li>
+                    <li>Maîtriser les concepts clés de l’intégrale stochastique et du calcul d’Itô.</li>
+                    <li>Appliquer le calcul d’Itô pour résoudre des problèmes pratiques en finance et en théorie des probabilités.</li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <h3>Chapitre 3 : Applications en Finance</h3>
+                <p>Objectif du chapitre :</p>
+                <ul>
+                    <li>Fournir une compréhension approfondie des modèles stochastiques appliqués en finance.</li>
+                    <li>Mettre en lumière leur utilisation pratique pour l’évaluation des actifs financiers.</li>
+                    <li>Initier au pricing des options.</li>
+                </ul>
+            </div>
+            <div class="chapter">
+                <h3>Chapitre 4 : Techniques d’Évaluation</h3>
+                <p>Objectif du chapitre :</p>
+                <ul>
+                    <li>Familiariser les étudiants avec l’application pratique des modèles stochastiques en finance quantitative.</li>
+                    <li>Initier à l’utilisation des données réelles et des bases de données en Python.</li>
+                </ul>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 IBNJAA SAID</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>

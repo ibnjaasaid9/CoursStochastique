@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Animation du titre
     const title = document.querySelector('.header-left h1');
-    title.style.animation = 'slideIn 2s ease-in-out';
+    if (title) {
+        title.style.animation = 'slideIn 2s ease-in-out';
+    }
 
     // Animation des images de livres
     const books = document.querySelectorAll('.book-references .book img');
@@ -13,6 +15,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         book.addEventListener('mouseout', function() {
             this.style.transform = 'scale(1)';
+        });
+    });
+
+    // Boutons Objectifs et QCM
+    document.querySelectorAll('.objectives-button').forEach(button => {
+        button.addEventListener('click', function() {
+            const chapterContent = this.parentElement;
+            const objectivesList = chapterContent.querySelector('.objectives-list');
+            objectivesList.classList.toggle('hidden');
+        });
+    });
+
+    // Boutons QCM
+    document.querySelectorAll('.qcm-button').forEach(button => {
+        button.addEventListener('click', function() {
+            alert('QCM pour ' + this.parentElement.parentElement.getAttribute('data-chapter'));
         });
     });
 

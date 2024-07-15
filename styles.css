@@ -146,33 +146,35 @@ td[contenteditable="true"]:focus {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.left-column .book-references {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+.book-references {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.left-column .book-references .book {
+.book-references td {
+    text-align: center;
+    padding: 1rem;
+}
+
+.book-references .book {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin: 0 1rem;
-    width: 150px; /* Set a fixed width for books */
 }
 
-.left-column .book-references .book img {
-    width: 100%;
+.book-references .book img {
+    width: 150px;
     height: auto;
     margin-bottom: 0.5rem; /* Add space between the image and the link */
     transition: transform 0.3s ease-in-out;
 }
 
-.left-column .book-references .book img:hover {
+.book-references .book img:hover {
     transform: scale(1.1);
 }
 
-.left-column .book-references .book a {
+.book-references .book a {
     display: inline-block;
     margin-top: 0.5rem;
     text-decoration: none;
@@ -180,7 +182,7 @@ td[contenteditable="true"]:focus {
     font-size: 0.9rem;
 }
 
-.left-column .book-references .book a:hover {
+.book-references .book a:hover {
     text-decoration: underline;
 }
 

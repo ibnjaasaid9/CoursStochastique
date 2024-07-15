@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // FullCalendar initialization for calendar with predefined events
+    // FullCalendar initialization for the calendar with predefined events
     if (document.getElementById('calendar')) {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -36,11 +36,18 @@ document.addEventListener('DOMContentLoaded', function() {
         calendar.render();
     }
 
-    // Handling session reservations from the consultation table
-    const reserveButtons = document.querySelectorAll('.consultation-table button');
-    reserveButtons.forEach(button => {
+    // Event listeners for chapter and quiz buttons
+    const chapterButtons = document.querySelectorAll('.chapter-button');
+    chapterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            alert('Reservation for session has been made.');
+            alert('You clicked: ' + this.textContent);
+        });
+    });
+
+    const quizButtons = document.querySelectorAll('.quiz-button');
+    quizButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            alert('Starting quiz for: ' + this.textContent);
         });
     });
 });

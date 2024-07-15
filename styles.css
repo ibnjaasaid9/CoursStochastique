@@ -36,6 +36,7 @@ header {
 
 .header-left h1 {
     color: #007bff; /* Set the color of the title to blue */
+    animation: slideIn 2s ease-in-out;
 }
 
 header .university-logo {
@@ -150,6 +151,11 @@ main {
     width: 100px;
     height: auto;
     margin-bottom: 0.5rem; /* Add space between the image and the link */
+    transition: transform 0.3s ease-in-out;
+}
+
+.left-column .book-references .book img:hover {
+    transform: scale(1.1);
 }
 
 .right-column {
@@ -241,4 +247,27 @@ a:hover {
         padding: 0.5rem;
         font-size: 0.875rem;
     }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.header-left h1 {
+    animation: slideIn 2s ease-in-out;
+}
+
+.book-references .book img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-references .book img:hover {
+    transform: scale(1.1);
 }

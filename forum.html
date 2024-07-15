@@ -16,23 +16,47 @@
     </header>
     <nav class="navigation">
         <ul>
-            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html">Résumé et Objectifs</a></li>
+            <li><a href="documents.html">Documents et Références</a></li>
+            <li><a href="calendrier.html">Calendrier et Projet</a></li>
             <li><a href="forum.html">Forum de Discussion</a></li>
         </ul>
     </nav>
     <main>
         <section id="forums">
             <h2>Forums par sujet</h2>
-            <p>Permettez aux élèves de poser des questions et de discuter des sujets des cours entre eux et avec vous.</p>
+            <div class="forum">
+                <h3>Mouvement Brownien</h3>
+                <p>Discutez et posez vos questions sur le mouvement brownien ici.</p>
+                <div class="discussion">
+                    <div class="question">
+                        <p><strong>Étudiant 1:</strong> Pouvez-vous expliquer le mouvement brownien en termes simples ?</p>
+                        <div class="reply">
+                            <p><strong>Professeur:</strong> Le mouvement brownien est un modèle mathématique utilisé pour décrire des chemins aléatoires. Il est souvent utilisé en finance pour modéliser les fluctuations des prix des actifs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-question">
+                    <h4>Poser une question</h4>
+                    <form action="post_question.php" method="post">
+                        <textarea name="question" placeholder="Écrivez votre question ici..." required></textarea>
+                        <input type="submit" value="Poster">
+                    </form>
+                </div>
+            </div>
         </section>
         <section id="consultation">
             <h2>Consultation en ligne</h2>
             <p>Offrez des créneaux horaires pour des consultations en ligne où les élèves peuvent réserver du temps pour discuter en tête-à-tête avec vous.</p>
+            <ul>
+                <li>12/12/2024 - 14:00 - 15:00</li>
+                <li>14/12/2024 - 10:00 - 11:00</li>
+                <li>16/12/2024 - 16:00 - 17:00</li>
+            </ul>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 IBNJAA SAID</p>
     </footer>
-    <script src="scripts.js"></script>
 </body>
 </html>

@@ -1,7 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     // Animation du titre
     const title = document.querySelector('.header-left h1');
-    title.style.animation = 'slideIn 2s ease-in-out';
+    if (title) {
+        title.style.animation = 'slideIn 2s ease-in-out';
+    }
 
     // Animation des images de livres
     const books = document.querySelectorAll('.book-references .book img');
@@ -15,8 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Initialisation du calendrier FullCalendar avec des événements prédéfinis
-    if (document.getElementById('calendar')) {
-        var calendarEl = document.getElementById('calendar');
+    const calendarEl = document.getElementById('calendar');
+    if (calendarEl) {
         var calendar = new FullCalendar.Calendar(calendarEl, {
             initialView: 'dayGridMonth',
             locale: 'fr',
@@ -42,13 +44,14 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Vous avez cliqué sur : ' + this.textContent);
         });
     });
-        const menuButton = document.querySelector('.menu-button');
+
+    const menuButton = document.querySelector('.menu-button');
     const navigation = document.querySelector('.navigation ul');
-
-    menuButton.addEventListener('click', function() {
-        navigation.classList.toggle('is-active');
-    });
-
+    if (menuButton && navigation) {
+        menuButton.addEventListener('click', function() {
+            navigation.classList.toggle('is-active');
+        });
+    }
 
     // Ajout d'écouteurs d'événements pour les boutons de téléchargement
     const downloadButtons = document.querySelectorAll('.download-button');
@@ -58,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-
 
 // Fonction pour gérer les téléchargements de fichiers
 function downloadFile(filePath) {
@@ -71,4 +73,3 @@ function downloadFile(filePath) {
     document.body.removeChild(link);
     console.log("Lien de téléchargement cliqué pour :", filePath);
 }
-

@@ -42,11 +42,13 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Vous avez cliqué sur : ' + this.textContent);
         });
     });
-    const menuButton = document.querySelector('.menu-button');
+        const menuButton = document.querySelector('.menu-button');
     const navigation = document.querySelector('.navigation ul');
 
     menuButton.addEventListener('click', function() {
         navigation.classList.toggle('is-active');
+    });
+
 
     // Ajout d'écouteurs d'événements pour les boutons de téléchargement
     const downloadButtons = document.querySelectorAll('.download-button');

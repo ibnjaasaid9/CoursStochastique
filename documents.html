@@ -25,47 +25,83 @@
     <main>
         <section id="documents">
             <h2>Documents et bases de données</h2>
-            <div class="documents-container">
-                <ul>
-                    <li><a href="supports/Cours_Introduction.pdf" download>Support de cours</a></li>
-                    <li><a href="supports/slides.pdf" download>Slides de présentation</a></li>
-                    <li><a href="supports/Bases_de_donnees.csv" download>Base de données prix action Amazon</a></li>
-                    <li><a href="supports/Bases_de_donnees_taux.csv" download>Base de données des taux</a></li>
-                    <li><a href="supports/Tp1.py" download>TP 1 Simulation des Trajectoires d’un Mouvement Brownien</a></li>
-                    <li><a href="supports/Tp2.py" download>TP 2 Simulation des Prix de l'action Amazon</a></li>
-                    <li><a href="supports/DL1.pdf" download>Devoir Libre : Processus d'Ornstein-Uhlenbeck et Modèle de Vasicek</a></li>
-                    <li><a href="supports/TD.pdf" download>TD</a></li>
-                </ul>
-                <h3>Références Utiles</h3>
-                <table class="book-references">
-                    <tr>
-                        <td>
-                            <div class="book">
-                                <img src="images/livre1.jpg" alt="Livre 1">
-                                <a href="supports/livre1.pdf" download><i class="fa fa-download"></i> Télécharger</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="book">
-                                <img src="images/livre2.jpg" alt="Livre 2">
-                                <a href="supports/livre2.pdf" download><i class="fa fa-download"></i> Télécharger</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="book">
-                                <img src="images/livre3.jpg" alt="Livre 3">
-                                <a href="supports/livre3.pdf" download><i class="fa fa-download"></i> Télécharger</a>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="book">
-                                <img src="images/livre4.jpg" alt="Livre 4">
-                                <a href="supports/livre4.pdf" download><i class="fa fa-download"></i> Télécharger</a>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
+            <table class="documents-table">
+                <tr>
+                    <th>Type</th>
+                    <th>Titre</th>
+                    <th>Téléchargement</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">Cours</td>
+                    <td>Support de cours</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/Cours_Introduction.pdf')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td>Slides de présentation</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/slides.pdf')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">TP</td>
+                    <td>TP 1 Simulation des Trajectoires d’un Mouvement Brownien</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/Tp1.py')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td>TP 2 Simulation des Prix de l'action Amazon</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/Tp2.py')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">TD</td>
+                    <td>TD1 : Pré-requis et rappel</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/TD1.pdf')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td>TD2 : Mouvement Brownien et calcul d’Itô</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/TD2.pdf')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td>DL</td>
+                    <td>Devoir Libre : Processus d'Ornstein-Uhlenbeck et Modèle de Vasicek</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/DL1.pdf')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td rowspan="2">BD</td>
+                    <td>Base de données prix action Amazon</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/Bases_de_donnees.csv')">Télécharger</button></td>
+                </tr>
+                <tr>
+                    <td>Base de données des taux</td>
+                    <td><button class="download-button" onclick="downloadFile('supports/Bases_de_donnees_taux.csv')">Télécharger</button></td>
+                </tr>
+            </table>
+            <h3>Références Utiles</h3>
+            <table class="book-references">
+                <tr>
+                    <td>
+                        <div class="book">
+                            <img src="images/livre1.jpg" alt="Livre 1">
+                            <button class="download-button" onclick="downloadFile('supports/livre1.pdf')">Télécharger</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="book">
+                            <img src="images/livre2.jpg" alt="Livre 2">
+                            <button class="download-button" onclick="downloadFile('supports/livre2.pdf')">Télécharger</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="book">
+                            <img src="images/livre3.jpg" alt="Livre 3">
+                            <button class="download-button" onclick="downloadFile('supports/livre3.pdf')">Télécharger</button>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="book">
+                            <img src="images/livre4.jpg" alt="Livre 4">
+                            <button class="download-button" onclick="downloadFile('supports/livre4.pdf')">Télécharger</button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
         </section>
     </main>
     <footer>

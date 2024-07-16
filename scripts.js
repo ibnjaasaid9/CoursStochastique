@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // FullCalendar initialization for calendar with predefined events
+    // Initialisation du calendrier FullCalendar avec des événements prédéfinis
     if (document.getElementById('calendar')) {
         var calendarEl = document.getElementById('calendar');
         var calendar = new FullCalendar.Calendar(calendarEl, {
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         calendar.render();
     }
 
-    // Event listeners for chapter buttons
+    // Ajout d'écouteurs d'événements pour les boutons des chapitres
     const chapterButtons = document.querySelectorAll('.chapter-button');
     chapterButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // Download button event listeners
+    // Ajout d'écouteurs d'événements pour les boutons de téléchargement
     const downloadButtons = document.querySelectorAll('.download-button');
     downloadButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -56,12 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
 function downloadFile(filePath) {
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = filePath.split('/').pop();  // Cela téléchargera le fichier avec son nom d'origine
+    link.download = filePath.split('/').pop(); // Télécharge le fichier avec son nom original
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
 }
 
-function startQuiz(quizName) {
-    alert('Démarrage du ' + quizName);
-}

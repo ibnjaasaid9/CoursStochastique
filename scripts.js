@@ -43,6 +43,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-
-    // No more quiz buttons events here as they have been removed from the HTML
+    // Download button event listeners
+    const downloadButtons = document.querySelectorAll('.download-button');
+    downloadButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            downloadFile(this.getAttribute('data-file'));
+        });
+    });
 });
+
+// Function to handle file downloads
+function downloadFile(filePath) {
+    window.location.href = filePath;
+}

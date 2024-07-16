@@ -43,5 +43,14 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Event listeners for quiz buttons
+const quizButtons = document.querySelectorAll('.quiz-button');
+quizButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        alert('Starting quiz for: ' + this.textContent);
+    });
+});
+
+
     // No more quiz buttons events here as they have been removed from the HTML
 });

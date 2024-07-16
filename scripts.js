@@ -52,13 +52,16 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+
 // Fonction pour gérer les téléchargements de fichiers
 function downloadFile(filePath) {
+    console.log("Création du lien de téléchargement pour :", filePath);
     const link = document.createElement('a');
     link.href = filePath;
     link.download = filePath.split('/').pop(); // Télécharge le fichier avec son nom original
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+    console.log("Lien de téléchargement cliqué pour :", filePath);
 }
 

@@ -61,3 +61,7 @@ function downloadFile(filePath) {
     link.click();
     document.body.removeChild(link);
 }
+
+function startQuiz(quizName) {
+    alert('Démarrage du ' + quizName);
+}

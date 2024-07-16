@@ -458,21 +458,4 @@ a:hover {
 .chapter-button:hover {
     opacity: 0.8;  /* Slight transparency on hover for interaction feedback */
 }
-.quiz-button {
-    background-color: #ff0000; /* Bright red for visibility */
-    color: white; /* White text for contrast */
-    padding: 5px 10px; /* Smaller padding for a compact look */
-    border-radius: 5px; /* Rounded corners for a modern appearance */
-    cursor: pointer; /* Indicates the button is clickable */
-    border: none; /* No border to keep it clean */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    font-size: 0.85em; /* Smaller font size for a subtle design */
-    margin: 0 auto; /* Center the button in the cell */
-    display: inline-block; /* Allows the button to respect the width property */
-}
-
-.quiz-button:hover {
-    background-color: #cc0000; /* Slightly darker red on hover for feedback */
-    opacity: 0.9; /* Slight transparency for interaction feedback */
-}
 

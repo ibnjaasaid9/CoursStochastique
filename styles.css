@@ -471,5 +471,28 @@ a:hover {
 .download-button:hover {
     background-color: #45a049; /* Darker green on hover */
 }
+@media (max-width: 600px) {
+    .header-content, .navigation ul {
+        flex-direction: column;
+    }
+
+    .navigation ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .navigation ul li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .chapter-button, .download-button {
+        width: 100%; /* Les boutons prennent toute la largeur */
+    }
+
+    .book {
+        width: 100%; /* Adaptation pour les images des livres */
+    }
+}
 
 

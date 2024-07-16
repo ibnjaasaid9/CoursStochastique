@@ -54,5 +54,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Function to handle file downloads
 function downloadFile(filePath) {
-    window.location.href = filePath;
+    const link = document.createElement('a');
+    link.href = filePath;
+    link.download = filePath.split('/').pop();  // This will download the file with its original filename
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
 }

@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const chapterButtons = document.querySelectorAll('.chapter-button');
     chapterButtons.forEach(button => {
         button.addEventListener('click', function() {
-            alert('You clicked: ' + this.textContent);
+            alert('Vous avez cliqué sur : ' + this.textContent);
         });
     });
 
@@ -52,11 +52,11 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Function to handle file downloads
+// Fonction pour gérer les téléchargements de fichiers
 function downloadFile(filePath) {
     const link = document.createElement('a');
     link.href = filePath;
-    link.download = filePath.split('/').pop();  // This will download the file with its original filename
+    link.download = filePath.split('/').pop();  // Cela téléchargera le fichier avec son nom d'origine
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

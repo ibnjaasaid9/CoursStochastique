@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         calendar.render();
     }
 
-    // Event listeners for chapter and quiz buttons
+    // Event listeners for chapter buttons
     const chapterButtons = document.querySelectorAll('.chapter-button');
     chapterButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -43,10 +43,5 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    const quizButtons = document.querySelectorAll('.quiz-button');
-    quizButtons.forEach(button => {
-        button.addEventListener('click', function() {
-            alert('Starting quiz for: ' + this.textContent);
-        });
-    });
+    // No more quiz buttons events here as they have been removed from the HTML
 });

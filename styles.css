@@ -428,17 +428,22 @@ a:hover {
     margin-top: 20px;  /* Space above the table */
 }
 
-.chapters-table th {
-    border: 1px solid #d3d3d3;  /* Light gray border for readability */
+.chapters-table th, .chapters-table td {
+    border: 1px solid #ccc;  /* Light gray border for readability */
     padding: 8px;  /* Adequate padding for content separation */
+}
+
+.chapters-table th {
+    background-color: #007bff;
+    color: #fff;
     text-align: left;  /* Aligns text to the left in cells */
 }
+
 .chapters-table td {
-    text-align: center; /* Center-aligns text and buttons in cells */
+    text-align: center; /* Center-aligns text in cells */
     vertical-align: middle; /* Aligns content in the middle vertically */
 }
 
-/* Styles for chapter buttons */
 .chapter-button {
     background-color: #008000;  /* Green background for visibility */
     color: white;  /* White text for contrast */
@@ -452,23 +457,4 @@ a:hover {
 
 .chapter-button:hover {
     opacity: 0.8;  /* Slight transparency on hover for interaction feedback */
-}
-
-.quiz-button {
-    background-color: #ff0000; /* Bright red for visibility */
-    color: white; /* White text for contrast */
-    width: auto; /* Auto width to not necessarily fill the cell */
-    padding: 5px 10px; /* Smaller padding for a compact look */
-    border-radius: 5px; /* Rounded corners for a modern appearance */
-    cursor: pointer; /* Indicates the button is clickable */
-    border: none; /* No border to keep it clean */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    font-size: 0.85em; /* Smaller font size for a subtle design */
-    margin: 0 auto; /* Center the button in the cell */
-    display: inline-block; /* Allows the button to respect the width property */
-}
-
-.quiz-button:hover {
-    background-color: #cc0000; /* Slightly darker red on hover for feedback */
-    opacity: 0.9; /* Slight transparency for interaction feedback */
 }

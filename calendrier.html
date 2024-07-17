@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calendrier et Projet</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/main.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.11.3/locales-all.min.js"></script>
 </head>
 <body>
     <header>
@@ -27,11 +24,13 @@
     </nav>
     <main>
         <section id="rendre-dl">
-            <h2>Rendre votre Devoir Libre</h2>
+            <h2>Rendre votre Devoir Libre / projet</h2>
             <form action="#" method="post" enctype="multipart/form-data">
                 <label for="file">Sélectionnez le fichier à télécharger:</label>
-                <input type="file" id="file" name="file" required>
-                <input type="submit" value="Télécharger">
+                <div class="file-upload">
+                    <input type="file" id="file" name="file" required>
+                    <input type="submit" value="Télécharger">
+                </div>
             </form>
         </section>
         <section id="seances">
@@ -39,69 +38,40 @@
             <table>
                 <thead>
                     <tr>
-                        <th>Séance</th>
-                        <th>Date</th>
-                        <th>Contenu</th>
+                        <th>Type</th>
+                        <th>Chapitre</th>
                         <th>Volume Horaire</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Séance 1</td>
-                        <td contenteditable="true"></td>
-                        <td>Chapitre 1</td>
-                        <td>3h</td>
-                    </tr>
-                    <tr>
-                        <td>Séance 2</td>
-                        <td contenteditable="true"></td>
-                        <td>Chapitre 2</td>
-                        <td>4h</td>
-                    </tr>
-                    <tr>
-                        <td>Séance 3</td>
-                        <td contenteditable="true"></td>
-                        <td>Chapitre 3</td>
-                        <td>3h</td>
-                    </tr>
-                    <tr>
-                        <td>Séance 4</td>
-                        <td contenteditable="true"></td>
-                        <td>TD</td>
-                        <td>4h</td>
-                    </tr>
-                    <tr>
-                        <td>Séance 5</td>
-                        <td contenteditable="true"></td>
-                        <td>TP1 et 2</td>
-                        <td>4h</td>
-                    </tr>
-                    <tr>
-                        <td>Séance 6</td>
-                        <td contenteditable="true"></td>
-                        <td>Correction de DL</td>
-                        <td>2h</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-        <section id="pourcentage">
-            <h2>Pourcentage des Évaluations</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Évaluation</th>
                         <th>Pourcentage</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Cours</td>
-                        <td>50%</td>
+                        <td rowspan="3">Cours</td>
+                        <td>Chapitre 1</td>
+                        <td>3h</td>
+                        <td rowspan="3">50%</td>
                     </tr>
                     <tr>
-                        <td>TP/TD/DL</td>
-                        <td>50%</td>
+                        <td>Chapitre 2</td>
+                        <td>4h</td>
+                    </tr>
+                    <tr>
+                        <td>Chapitre 3</td>
+                        <td>3h</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">TP/TD/DL</td>
+                        <td>TD</td>
+                        <td>4h</td>
+                        <td rowspan="3">50%</td>
+                    </tr>
+                    <tr>
+                        <td>TP</td>
+                        <td>4h</td>
+                    </tr>
+                    <tr>
+                        <td>DL</td>
+                        <td>2h</td>
                     </tr>
                 </tbody>
             </table>
